@@ -31,17 +31,20 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in">
             <h2 className="text-4xl font-bold text-foreground mb-6 md:text-5xl">
-              About Dr. Anirudha Vaidya
+              About Dr. Anirudha Vaidya (PT)
             </h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
+            </p>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Dr. Anirudha Vaidya is a highly skilled physiotherapist and chiropractor with extensive 
+                Dr. Anirudha Vaidya (PT) is a highly skilled physiotherapist and chiropractor with extensive 
                 experience in treating complex musculoskeletal conditions. His clinic in Pimpri-Chinchwad 
                 is recognized as one of the best physiotherapy centers in the PCMC area.
               </p>
               <p>
                 With a philosophy of <span className="font-semibold text-foreground">treatment without medicine 
-                and without surgery</span>, Dr. Vaidya has successfully treated thousands of patients 
+                and without surgery</span>, Dr. Anirudha Vaidya (PT) has successfully treated thousands of patients 
                 suffering from chronic pain, sports injuries, and neurological conditions.
               </p>
               <p>

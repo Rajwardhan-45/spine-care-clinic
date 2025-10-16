@@ -18,7 +18,7 @@ const Hero = () => {
       
       <div className="container relative z-10 px-4 py-20 mx-auto text-center animate-fade-in">
         <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
-          Expert Physiotherapy &<br />Chiropractic Care
+          Dr. Anirudha Vaidya (PT)<br />Expert Physiotherapy & Chiropractic Care
         </h1>
         <p className="mb-8 text-xl text-white/90 max-w-2xl mx-auto md:text-2xl">
           Advanced treatment for back pain, sports injuries, and rehabilitation.<br />
