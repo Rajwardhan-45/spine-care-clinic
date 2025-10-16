@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import AppointmentForm from "@/components/AppointmentForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <AppointmentForm />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

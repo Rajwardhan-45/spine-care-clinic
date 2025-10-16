@@ -33,8 +33,11 @@ const About = () => {
             <h2 className="text-4xl font-bold text-foreground mb-6 md:text-5xl">
               About Dr. Anirudha Vaidya (PT)
             </h2>
-            <p className="text-lg text-muted-foreground mb-4">
+            <p className="text-lg text-muted-foreground mb-2">
               <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              <span className="font-medium text-foreground">Reg. No. 2013/01/PT/2679</span>
             </p>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
@@ -43,8 +46,8 @@ const About = () => {
                 is recognized as one of the best physiotherapy centers in the PCMC area.
               </p>
               <p>
-                With a philosophy of <span className="font-semibold text-foreground">treatment without medicine 
-                and without surgery</span>, Dr. Anirudha Vaidya (PT) has successfully treated thousands of patients 
+                With a philosophy of <span className="font-bold text-xl text-accent">✨ No medicine. No surgery. ✨</span>, 
+                Dr. Anirudha Vaidya (PT) has successfully treated thousands of patients 
                 suffering from chronic pain, sports injuries, and neurological conditions.
               </p>
               <p>

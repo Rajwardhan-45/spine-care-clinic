@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +31,12 @@ const Navbar = () => {
     >
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <img src={logo} alt="Dr. Vaidya's Physiotherapy Clinic Logo" className="h-12 w-auto" />
             <h1 className={`text-xl font-bold transition-colors ${
               isScrolled ? "text-foreground" : "text-white"
             }`}>
-              Dr. Anirudha Vaidya
+              Dr. Anirudha Vaidya (PT)
             </h1>
           </div>
 
@@ -77,7 +79,7 @@ const Navbar = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground"
               asChild
             >
-              <a href="tel:09561260964">
+              <a href="tel:+919561260964">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </a>
@@ -126,7 +128,7 @@ const Navbar = () => {
                 className="mx-4 bg-accent hover:bg-accent/90 text-accent-foreground"
                 asChild
               >
-                <a href="tel:09561260964">
+                <a href="tel:+919561260964">
                   <Phone className="mr-2 h-4 w-4" />
                   Call Now
                 </a>

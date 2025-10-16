@@ -16,6 +16,21 @@ const testimonials = [
     name: "Bhaskar Powar",
     text: "Dr. Anirudha Vaidya is excellent – professional, knowledgeable, and compassionate. Effective treatment, clear communication, and patient-centered care. Highly recommended!",
     rating: 5
+  },
+  {
+    name: "Pallavii Marathe",
+    text: "Best physiotherapist in pcmc. Dr. Vaidya is so confident about his treatment. He gives personal attention to each and every patient. I have approached him for paralysis rehabilitation. From the first day he gives confidence to every patient about recovery. I will definitely refer Dr Anirudha Vaidya for ortho and neuro physiotherapy.",
+    rating: 5
+  },
+  {
+    name: "Sushil Taru",
+    text: "Dr. Anirudha is excellent at explaining the root cause and the treatment plan in a simple, clear manner. He not only focuses on the main issue but also addresses any related problems. Highly recommended.",
+    rating: 5
+  },
+  {
+    name: "Sushil Meher",
+    text: "I took physiotherapy treatment here for neck pain. Although the doctor recommended 21 sessions, I started feeling better after just 7–8 sessions. The clinic is well-equipped with all the necessary facilities like IFT, traction, cupping, long wave therapy, etc. The doctor gives personal attention to each patient, which made the experience even better. Overall, I had a very positive experience and would highly recommend it.",
+    rating: 5
   }
 ];
 
@@ -32,7 +47,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 

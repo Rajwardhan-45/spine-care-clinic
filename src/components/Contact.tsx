@@ -45,10 +45,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg text-foreground mb-2">Phone</h3>
                     <a 
-                      href="tel:09561260964" 
+                      href="tel:+919561260964" 
                       className="text-primary hover:underline text-lg font-semibold"
                     >
-                      095612 60964
+                      +91 9561260964
                     </a>
                   </div>
                 </div>
@@ -64,9 +64,29 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg text-foreground mb-2">Clinic Hours</h3>
                     <div className="space-y-1 text-muted-foreground">
-                      <p>Monday - Saturday: 9:00 AM - 9:00 PM</p>
+                      <p>Monday - Saturday</p>
+                      <p className="font-semibold">9:30 AM - 2:00 PM, 4:00 PM - 9:00 PM</p>
                       <p>Sunday: By Appointment</p>
                     </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border shadow-card hover:shadow-soft transition-all">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-accent flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-secondary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg text-foreground mb-2">Email</h3>
+                    <a 
+                      href="mailto:prophysio22@gmail.com" 
+                      className="text-primary hover:underline"
+                    >
+                      prophysio22@gmail.com
+                    </a>
                   </div>
                 </div>
               </CardContent>
