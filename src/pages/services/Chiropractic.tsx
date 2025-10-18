@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Target } from "lucide-react";
+import chiropracticImg from "@/assets/treatments/chiropractic-therapy.jpg";
 
 const Chiropractic = () => {
   return (
@@ -7,6 +8,7 @@ const Chiropractic = () => {
       title="Chiropractic Care"
       description="Spinal adjustments and manipulations for optimal alignment and pain relief"
       icon={<Target className="h-8 w-8 text-white" />}
+      treatmentImage={chiropracticImg}
       keyPoints={[
         "Spinal manipulation and adjustment",
         "Joint mobilization techniques",

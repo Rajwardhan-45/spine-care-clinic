@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Heart } from "lucide-react";
+import emsTherapyImg from "@/assets/treatments/ems-therapy.jpg";
 
 const Paralysis = () => {
   return (
@@ -7,6 +8,7 @@ const Paralysis = () => {
       title="Paralysis Rehabilitation"
       description="Comprehensive post-stroke physiotherapy and neurological rehabilitation"
       icon={<Heart className="h-8 w-8 text-white" />}
+      treatmentImage={emsTherapyImg}
       keyPoints={[
         "Post-stroke rehabilitation program",
         "Hemiplegia and hemiparesis treatment",

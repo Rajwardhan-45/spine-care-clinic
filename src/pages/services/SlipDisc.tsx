@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Bone } from "lucide-react";
+import tractionImg from "@/assets/treatments/traction-therapy.jpg";
 
 const SlipDisc = () => {
   return (
@@ -7,6 +8,7 @@ const SlipDisc = () => {
       title="Slip Disc Treatment"
       description="Non-surgical treatment for herniated disc, disc bulge, and spinal disc problems"
       icon={<Bone className="h-8 w-8 text-white" />}
+      treatmentImage={tractionImg}
       keyPoints={[
         "Treatment without surgery or medication",
         "Disc herniation and bulge management",

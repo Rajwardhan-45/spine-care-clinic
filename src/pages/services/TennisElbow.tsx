@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Zap } from "lucide-react";
+import laserTherapyImg from "@/assets/treatments/laser-therapy.jpg";
 
 const TennisElbow = () => {
   return (
@@ -7,6 +8,7 @@ const TennisElbow = () => {
       title="Tennis Elbow Treatment"
       description="Targeted therapy for elbow pain and repetitive strain injuries"
       icon={<Zap className="h-8 w-8 text-white" />}
+      treatmentImage={laserTherapyImg}
       keyPoints={[
         "Lateral epicondylitis (tennis elbow) treatment",
         "Medial epicondylitis (golfer's elbow) care",

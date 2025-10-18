@@ -31,13 +31,8 @@ const Navbar = () => {
     >
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0 flex items-center gap-3">
-            <img src={logo} alt="Dr. Vaidya's Physiotherapy Clinic Logo" className="h-12 w-auto" />
-            <h1 className={`text-xl font-bold transition-colors ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}>
-              Dr. Anirudha Vaidya (PT)
-            </h1>
+          <div className="flex-shrink-0">
+            <img src={logo} alt="Dr. Vaidya's ProPhysio - Advanced Physiotherapy Clinic & Paralysis Rehab Center" className="h-16 md:h-20 w-auto" />
           </div>
 
           {/* Desktop Menu */}

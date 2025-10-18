@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { User } from "lucide-react";
+import laserTherapyImg from "@/assets/treatments/laser-therapy.jpg";
 
 const FacialPalsy = () => {
   return (
@@ -7,6 +8,7 @@ const FacialPalsy = () => {
       title="Facial Palsy (Bell's Palsy)"
       description="Specialized facial nerve rehabilitation and recovery therapy"
       icon={<User className="h-8 w-8 text-white" />}
+      treatmentImage={laserTherapyImg}
       keyPoints={[
         "Bell's palsy treatment and rehabilitation",
         "Facial nerve paralysis recovery",

@@ -1,5 +1,6 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Droplet } from "lucide-react";
+import iftTherapyImg from "@/assets/treatments/ift-therapy.jpg";
 
 const LigamentTreatment = () => {
   return (
@@ -7,6 +8,7 @@ const LigamentTreatment = () => {
       title="Ligament Treatment"
       description="Expert care for ligament tears, sprains, and reconstruction rehabilitation"
       icon={<Droplet className="h-8 w-8 text-white" />}
+      treatmentImage={iftTherapyImg}
       keyPoints={[
         "ACL, PCL, MCL, LCL tear management",
         "Grade I, II, III sprain treatment",

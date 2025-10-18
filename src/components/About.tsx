@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, BookOpen, Users, TrendingUp } from "lucide-react";
+import doctorProfile from "@/assets/doctor-profile.jpg";
 
 const About = () => {
   const highlights = [
@@ -29,16 +30,25 @@ const About = () => {
     <section id="about" className="py-20 bg-card">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-in">
-            <h2 className="text-4xl font-bold text-foreground mb-6 md:text-5xl">
-              About Dr. Anirudha Vaidya (PT)
-            </h2>
-            <p className="text-lg text-muted-foreground mb-2">
-              <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
-            </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              <span className="font-medium text-foreground">Reg. No. 2013/01/PT/2679</span>
-            </p>
+          <div className="animate-slide-in space-y-6">
+            <div className="flex items-center gap-6 mb-6">
+              <img 
+                src={doctorProfile} 
+                alt="Dr. Anirudha Vaidya (PT) - Consultant Physiotherapist" 
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-elegant border-4 border-accent"
+              />
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                  Dr. Anirudha Vaidya (PT)
+                </h2>
+                <p className="text-lg text-muted-foreground mt-2">
+                  <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-medium text-foreground">Reg. No. 2013/01/PT/2679</span>
+                </p>
+              </div>
+            </div>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
                 Dr. Anirudha Vaidya (PT) is a highly skilled physiotherapist and chiropractor with extensive 
