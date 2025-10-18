@@ -31,8 +31,15 @@ const Navbar = () => {
     >
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0">
+          <div className="flex items-center gap-4">
             <img src={logo} alt="Dr. Vaidya's ProPhysio - Advanced Physiotherapy Clinic & Paralysis Rehab Center" className="h-16 md:h-20 w-auto" />
+            <div className="hidden md:block">
+              <div className="bg-gradient-accent px-4 py-2 rounded-full">
+                <p className="text-sm font-bold text-secondary-foreground whitespace-nowrap">
+                  ✨ Without Medicine. Without Surgery ✨
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Desktop Menu */}

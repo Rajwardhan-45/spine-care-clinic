@@ -1,6 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Shield } from "lucide-react";
-import pemfTherapyImg from "@/assets/treatments/pemf-therapy.jpg";
 
 const CervicalSpondylosis = () => {
   return (
@@ -8,7 +7,6 @@ const CervicalSpondylosis = () => {
       title="Cervical Spondylosis"
       description="Effective neck pain treatment and cervical spine care"
       icon={<Shield className="h-8 w-8 text-white" />}
-      treatmentImage={pemfTherapyImg}
       keyPoints={[
         "Cervical disc degeneration treatment",
         "Neck pain and stiffness relief",

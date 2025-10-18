@@ -1,6 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Bone } from "lucide-react";
-import tractionTherapyImg from "@/assets/treatments/traction-therapy.jpg";
 
 const BackPain = () => {
   return (
@@ -8,7 +7,6 @@ const BackPain = () => {
       title="Back Pain & Sciatica"
       description="Comprehensive treatment for chronic back pain and sciatica without surgery"
       icon={<Bone className="h-8 w-8 text-white" />}
-      treatmentImage={tractionTherapyImg}
       keyPoints={[
         "Chronic lower back pain management",
         "Acute back pain relief",

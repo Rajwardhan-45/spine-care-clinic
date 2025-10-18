@@ -1,6 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Activity } from "lucide-react";
-import sportsInjuryImg from "@/assets/treatments/sports-injury.jpg";
 
 const SportsInjury = () => {
   return (
@@ -8,7 +7,6 @@ const SportsInjury = () => {
       title="Sports Injury Treatment"
       description="Comprehensive rehabilitation for ACL, ligament injuries, and sports-related conditions"
       icon={<Activity className="h-8 w-8 text-white" />}
-      treatmentImage={sportsInjuryImg}
       keyPoints={[
         "ACL reconstruction rehabilitation with progressive strengthening",
         "Meniscus tear treatment and functional recovery",

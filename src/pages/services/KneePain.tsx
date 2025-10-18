@@ -1,6 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Footprints } from "lucide-react";
-import iftTherapyImg from "@/assets/treatments/ift-therapy.jpg";
 
 const KneePain = () => {
   return (
@@ -8,7 +7,6 @@ const KneePain = () => {
       title="Knee Pain Treatment"
       description="Comprehensive knee rehabilitation and pain management"
       icon={<Footprints className="h-8 w-8 text-white" />}
-      treatmentImage={iftTherapyImg}
       keyPoints={[
         "Osteoarthritis knee pain management",
         "Meniscus tear rehabilitation",

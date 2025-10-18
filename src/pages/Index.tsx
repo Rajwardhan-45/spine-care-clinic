@@ -7,13 +7,12 @@ import AppointmentForm from "@/components/AppointmentForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import NoMedicineNoSurgeryBanner from "@/components/NoMedicineNoSurgeryBanner";
+
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <NoMedicineNoSurgeryBanner />
       <Hero />
       <Services />
       <About />

@@ -1,6 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
 import { Smile } from "lucide-react";
-import exerciseTherapyImg from "@/assets/treatments/exercise-therapy.jpg";
 
 const FrozenShoulder = () => {
   return (
@@ -8,7 +7,6 @@ const FrozenShoulder = () => {
       title="Frozen Shoulder Treatment"
       description="Specialized treatment for adhesive capsulitis and shoulder mobility restoration"
       icon={<Smile className="h-8 w-8 text-white" />}
-      treatmentImage={exerciseTherapyImg}
       keyPoints={[
         "Adhesive capsulitis (frozen shoulder) treatment",
         "Pain relief in all stages of freezing",
