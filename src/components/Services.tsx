@@ -5,6 +5,12 @@ import kneePainBg from "@/assets/conditions/knee-pain.jpg";
 import spinePainBg from "@/assets/conditions/spine-pain.jpg";
 import facialPalsyBg from "@/assets/conditions/facial-palsy.jpg";
 import sciaticaBg from "@/assets/conditions/sciatica.jpg";
+import massageTherapyBg from "@/assets/conditions/massage-therapy.jpg";
+import cuppingTherapyBg from "@/assets/conditions/cupping-therapy.jpg";
+import dryNeedlingBg from "@/assets/conditions/dry-needling.jpg";
+import elbowPainBg from "@/assets/conditions/elbow-pain.jpg";
+import paralysisRehabBg from "@/assets/conditions/paralysis-rehab.jpg";
+import shoulderPainBg from "@/assets/conditions/shoulder-pain.jpg";
 
 const services = [
   {
@@ -13,7 +19,7 @@ const services = [
     description: "ACL, ligament injuries, meniscus tears, and complete sports rehabilitation",
     category: "Sports Medicine",
     slug: "sports-injury",
-    backgroundImage: null
+    backgroundImage: massageTherapyBg
   },
   {
     icon: Bone,
@@ -37,7 +43,7 @@ const services = [
     description: "Spinal adjustments and manipulations for optimal alignment and pain relief",
     category: "Chiropractic",
     slug: "chiropractic",
-    backgroundImage: null
+    backgroundImage: massageTherapyBg
   },
   {
     icon: Shield,
@@ -61,7 +67,7 @@ const services = [
     description: "Specialized treatment for shoulder pain and mobility issues",
     category: "Shoulder Care",
     slug: "frozen-shoulder",
-    backgroundImage: null
+    backgroundImage: shoulderPainBg
   },
   {
     icon: Heart,
@@ -69,7 +75,7 @@ const services = [
     description: "Post-stroke physiotherapy and neurological rehabilitation",
     category: "Neuro Rehab",
     slug: "paralysis",
-    backgroundImage: null
+    backgroundImage: paralysisRehabBg
   },
   {
     icon: Zap,
@@ -77,7 +83,7 @@ const services = [
     description: "Targeted therapy for elbow pain and repetitive strain injuries",
     category: "Elbow Care",
     slug: "tennis-elbow",
-    backgroundImage: null
+    backgroundImage: elbowPainBg
   },
   {
     icon: User,
@@ -93,7 +99,7 @@ const services = [
     description: "Expert care for ligament tears, sprains, and reconstruction rehabilitation",
     category: "Sports Medicine",
     slug: "ligament-treatment",
-    backgroundImage: null
+    backgroundImage: elbowPainBg
   },
   {
     icon: Gem,
@@ -101,7 +107,7 @@ const services = [
     description: "Traditional cupping for pain relief, muscle relaxation, and improved blood flow",
     category: "Alternative Therapy",
     slug: "cupping-therapy",
-    backgroundImage: null
+    backgroundImage: cuppingTherapyBg
   },
   {
     icon: Sparkles,
@@ -109,7 +115,7 @@ const services = [
     description: "Trigger point therapy for muscle pain, tension, and movement dysfunction",
     category: "Manual Therapy",
     slug: "dry-needling",
-    backgroundImage: null
+    backgroundImage: dryNeedlingBg
   },
   {
     icon: HandMetal,
@@ -117,7 +123,7 @@ const services = [
     description: "Traditional pressure point therapy for pain relief and holistic wellness",
     category: "Alternative Therapy",
     slug: "acupressure",
-    backgroundImage: null
+    backgroundImage: dryNeedlingBg
   }
 ];
 
