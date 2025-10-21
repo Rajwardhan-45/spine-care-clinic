@@ -1,6 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Heart, Bone, Footprints, Smile, Zap, Shield, Target, User, Droplet } from "lucide-react";
+import { Activity, Heart, Bone, Footprints, Smile, Zap, Shield, Target, User, Droplet, Gem, Sparkles, HandMetal } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import kneePainBg from "@/assets/conditions/knee-pain.jpg";
+import spinePainBg from "@/assets/conditions/spine-pain.jpg";
+import facialPalsyBg from "@/assets/conditions/facial-palsy.jpg";
+import sciaticaBg from "@/assets/conditions/sciatica.jpg";
 
 const services = [
   {
@@ -8,77 +12,112 @@ const services = [
     title: "Sports Injury Treatment",
     description: "ACL, ligament injuries, meniscus tears, and complete sports rehabilitation",
     category: "Sports Medicine",
-    slug: "sports-injury"
+    slug: "sports-injury",
+    backgroundImage: null
   },
   {
     icon: Bone,
     title: "Slip Disc Treatment",
     description: "Advanced non-surgical treatment for herniated disc, disc bulge, and spinal disc problems",
     category: "Spine Care",
-    slug: "slip-disc"
+    slug: "slip-disc",
+    backgroundImage: spinePainBg
   },
   {
     icon: Bone,
     title: "Back Pain & Sciatica",
     description: "Comprehensive treatment for chronic back pain and sciatica without surgery",
     category: "Spine Care",
-    slug: "back-pain"
+    slug: "back-pain",
+    backgroundImage: sciaticaBg
   },
   {
     icon: Target,
     title: "Chiropractic Care",
     description: "Spinal adjustments and manipulations for optimal alignment and pain relief",
     category: "Chiropractic",
-    slug: "chiropractic"
+    slug: "chiropractic",
+    backgroundImage: null
   },
   {
     icon: Shield,
     title: "Cervical Spondylosis",
     description: "Effective neck pain treatment and cervical spine care",
     category: "Neck Care",
-    slug: "cervical-spondylosis"
+    slug: "cervical-spondylosis",
+    backgroundImage: spinePainBg
   },
   {
     icon: Footprints,
     title: "Knee Pain Treatment",
     description: "Comprehensive knee rehabilitation and pain management",
     category: "Joint Care",
-    slug: "knee-pain"
+    slug: "knee-pain",
+    backgroundImage: kneePainBg
   },
   {
     icon: Smile,
     title: "Frozen Shoulder",
     description: "Specialized treatment for shoulder pain and mobility issues",
     category: "Shoulder Care",
-    slug: "frozen-shoulder"
+    slug: "frozen-shoulder",
+    backgroundImage: null
   },
   {
     icon: Heart,
     title: "Paralysis Rehabilitation",
     description: "Post-stroke physiotherapy and neurological rehabilitation",
     category: "Neuro Rehab",
-    slug: "paralysis"
+    slug: "paralysis",
+    backgroundImage: null
   },
   {
     icon: Zap,
     title: "Tennis Elbow Treatment",
     description: "Targeted therapy for elbow pain and repetitive strain injuries",
     category: "Elbow Care",
-    slug: "tennis-elbow"
+    slug: "tennis-elbow",
+    backgroundImage: null
   },
   {
     icon: User,
     title: "Facial Palsy (Bell's Palsy)",
     description: "Specialized facial nerve rehabilitation and recovery therapy",
     category: "Neuro Rehab",
-    slug: "facial-palsy"
+    slug: "facial-palsy",
+    backgroundImage: facialPalsyBg
   },
   {
     icon: Droplet,
     title: "Ligament Treatment",
     description: "Expert care for ligament tears, sprains, and reconstruction rehabilitation",
     category: "Sports Medicine",
-    slug: "ligament-treatment"
+    slug: "ligament-treatment",
+    backgroundImage: null
+  },
+  {
+    icon: Gem,
+    title: "Cupping Therapy",
+    description: "Traditional cupping for pain relief, muscle relaxation, and improved blood flow",
+    category: "Alternative Therapy",
+    slug: "cupping-therapy",
+    backgroundImage: null
+  },
+  {
+    icon: Sparkles,
+    title: "Dry Needling Therapy",
+    description: "Trigger point therapy for muscle pain, tension, and movement dysfunction",
+    category: "Manual Therapy",
+    slug: "dry-needling",
+    backgroundImage: null
+  },
+  {
+    icon: HandMetal,
+    title: "Acupressure Therapy",
+    description: "Traditional pressure point therapy for pain relief and holistic wellness",
+    category: "Alternative Therapy",
+    slug: "acupressure",
+    backgroundImage: null
   }
 ];
 
@@ -107,11 +146,17 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-soft transition-all duration-300 hover:-translate-y-2 border-border bg-card cursor-pointer"
+                className="group hover:shadow-soft transition-all duration-300 hover:-translate-y-2 border-border bg-card cursor-pointer overflow-hidden relative"
                 style={{ animationDelay: `${index * 100}ms` }}
                 onClick={() => handleServiceClick(service.slug)}
               >
-                <CardHeader>
+                {service.backgroundImage && (
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity"
+                    style={{ backgroundImage: `url(${service.backgroundImage})` }}
+                  />
+                )}
+                <CardHeader className="relative z-10">
                   <div className="w-14 h-14 rounded-xl bg-gradient-hero flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Icon className="h-7 w-7 text-primary-foreground" />
                   </div>
@@ -120,7 +165,7 @@ const Services = () => {
                     {service.category}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="relative z-10">
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
               </Card>

@@ -56,7 +56,7 @@ const About = () => {
                 is recognized as one of the best physiotherapy centers in the PCMC area.
               </p>
               <p>
-                With a philosophy of <span className="font-bold text-xl text-accent">✨ No medicine. No surgery. ✨</span>, 
+                With a philosophy of <span className="font-bold text-xl text-accent">✨ Without Medicine. Without Surgery. ✨</span>, 
                 Dr. Anirudha Vaidya (PT) has successfully treated thousands of patients 
                 suffering from chronic pain, sports injuries, and neurological conditions.
               </p>

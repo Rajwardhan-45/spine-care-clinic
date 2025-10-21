@@ -22,7 +22,7 @@ const Hero = () => {
         </h1>
         <p className="mb-8 text-xl text-white/90 max-w-2xl mx-auto md:text-2xl">
           Advanced treatment for back pain, sports injuries, and rehabilitation.<br />
-          <span className="font-bold text-2xl md:text-3xl text-accent animate-pulse">✨ No medicine. No surgery. ✨</span><br />
+          <span className="font-bold text-2xl md:text-3xl text-accent animate-pulse">✨ Without Medicine. Without Surgery. ✨</span><br />
           <span className="font-semibold">Just results.</span>
         </p>
         
