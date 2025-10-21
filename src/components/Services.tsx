@@ -11,6 +11,7 @@ import dryNeedlingBg from "@/assets/conditions/dry-needling.jpg";
 import elbowPainBg from "@/assets/conditions/elbow-pain.jpg";
 import paralysisRehabBg from "@/assets/conditions/paralysis-rehab.jpg";
 import shoulderPainBg from "@/assets/conditions/shoulder-pain.jpg";
+import acupressureBg from "@/assets/conditions/acupressure.jpg";
 
 const services = [
   {
@@ -123,7 +124,7 @@ const services = [
     description: "Traditional pressure point therapy for pain relief and holistic wellness",
     category: "Alternative Therapy",
     slug: "acupressure",
-    backgroundImage: dryNeedlingBg
+    backgroundImage: acupressureBg
   }
 ];
 
@@ -158,7 +159,7 @@ const Services = () => {
               >
                 {service.backgroundImage && (
                   <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity"
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity"
                     style={{ backgroundImage: `url(${service.backgroundImage})` }}
                   />
                 )}
