@@ -9,10 +9,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-hero">
-      <div className="absolute inset-0 bg-black/40" />
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80" />
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
@@ -22,7 +22,7 @@ const Hero = () => {
         </h1>
         <p className="mb-8 text-xl text-white/90 max-w-2xl mx-auto md:text-2xl">
           Advanced treatment for back pain, sports injuries, and rehabilitation.<br />
-          <span className="font-bold text-2xl md:text-3xl text-accent animate-pulse">✨ Without Medicine. Without Surgery. ✨</span><br />
+          <span className="font-bold text-2xl md:text-3xl animate-pulse" style={{ color: '#00FF00' }}>✨ Without Medicine. Without Surgery. ✨</span><br />
           <span className="font-semibold">Just results.</span>
         </p>
         
@@ -41,9 +41,9 @@ const Hero = () => {
             className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm text-lg px-8 py-6 rounded-xl transition-all hover:scale-105"
             asChild
           >
-            <a href="tel:+919561260964">
+            <a href="tel:+917517237255">
               <Phone className="mr-2 h-5 w-5" />
-              +91 9561260964
+              +91 7517237255
             </a>
           </Button>
         </div>

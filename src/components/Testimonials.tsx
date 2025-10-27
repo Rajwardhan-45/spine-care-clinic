@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Pallavii Marathe",
-    text: "Best physiotherapist in pcmc. Dr. Vaidya is so confident about his treatment. He gives personal attention to each and every patient. I have approached him for paralysis rehabilitation. From the first day he gives confidence to every patient about recovery. I will definitely refer Dr Anirudha Vaidya for ortho and neuro physiotherapy.",
+    text: "Best physiotherapist in Pune and Pimpri Chinchwad. Dr. Vaidya is so confident about his treatment. He gives personal attention to each and every patient. I have approached him for paralysis rehabilitation. From the first day he gives confidence to every patient about recovery. I will definitely refer Dr Anirudha Vaidya for ortho and neuro physiotherapy.",
     rating: 5
   },
   {

@@ -7,6 +7,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SocialButtons from "@/components/SocialButtons";
 
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <Contact />
       <Footer />
       <WhatsAppButton />
+      <SocialButtons />
     </div>
   );
 };

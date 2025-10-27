@@ -52,8 +52,8 @@ const About = () => {
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
                 Dr. Anirudha Vaidya (PT) is a highly skilled physiotherapist and chiropractor with extensive 
-                experience in treating complex musculoskeletal conditions. His clinic in Pimpri-Chinchwad 
-                is recognized as one of the best physiotherapy centers in the PCMC area.
+                experience in treating complex musculoskeletal conditions. His clinic in Pune and Pimpri Chinchwad 
+                is recognized as one of the best physiotherapy centers in the area.
               </p>
               <p>
                 With a philosophy of <span className="font-bold text-xl text-accent">✨ Without Medicine. Without Surgery. ✨</span>, 
@@ -92,7 +92,7 @@ const About = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Best physiotherapy and chiropractic clinic in Pune & PCMC</span>
+                    <span>Best physiotherapy and chiropractic clinic in Pune and Pimpri Chinchwad</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0"></span>
@@ -108,7 +108,7 @@ const About = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Convenient location in Sambhajinagar, PCMC</span>
+                    <span>Convenient location in Sambhajinagar, Pune and Pimpri Chinchwad</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0"></span>

@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className="bg-card border-t border-border py-12">
       <div className="container px-4 mx-auto">
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-2">
+          <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
             Dr. Anirudha Vaidya (PT) Physiotherapy & Chiropractic Clinic
           </h3>
-          <p className="text-muted-foreground mb-6">
-            Best Physiotherapist in PCMC | Expert Chiropractic Care
+          <p className="text-lg md:text-xl text-muted-foreground mb-6">
+            Best Physiotherapist in Pune and Pimpri Chinchwad | Expert Chiropractic Care
           </p>
           
           <div className="flex gap-4 justify-center mb-6">

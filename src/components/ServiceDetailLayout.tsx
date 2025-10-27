@@ -138,7 +138,7 @@ const ServiceDetailLayout = ({
                     className="w-full bg-white text-primary hover:bg-white/90"
                     asChild
                   >
-                    <a href="tel:09561260964">Call: 095612 60964</a>
+                    <a href="tel:07517237255">Call: 075172 37255</a>
                   </Button>
                 </CardContent>
               </Card>

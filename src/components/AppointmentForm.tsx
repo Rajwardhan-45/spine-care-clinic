@@ -75,7 +75,7 @@ This appointment request was submitted through the website booking form.
       console.error('Error:', error);
       toast({
         title: "Something went wrong",
-        description: "Please try calling us directly at +91 9561260964",
+        description: "Please try calling us directly at +91 7517237255",
         variant: "destructive"
       });
       setIsSubmitting(false);
@@ -224,7 +224,7 @@ This appointment request was submitted through the website booking form.
               </Button>
 
               <p className="text-center text-sm text-muted-foreground mt-4">
-                Or call us directly at <a href="tel:+919561260964" className="text-primary font-semibold hover:underline">+91 9561260964</a>
+                Or call us directly at <a href="tel:+917517237255" className="text-primary font-semibold hover:underline">+91 7517237255</a>
               </p>
             </form>
           </CardContent>

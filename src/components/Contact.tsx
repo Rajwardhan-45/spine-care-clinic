@@ -10,7 +10,7 @@ const Contact = () => {
             Visit Our Clinic
           </h2>
           <p className="text-xl text-muted-foreground">
-            Conveniently located in Pimpri-Chinchwad
+            Conveniently located in Pune and Pimpri Chinchwad
           </p>
         </div>
 
@@ -45,10 +45,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg text-foreground mb-2">Phone</h3>
                     <a 
-                      href="tel:+919561260964" 
+                      href="tel:+917517237255" 
                       className="text-primary hover:underline text-lg font-semibold"
                     >
-                      +91 9561260964
+                      +91 7517237255
                     </a>
                   </div>
                 </div>
