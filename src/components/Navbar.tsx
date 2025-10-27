@@ -31,11 +31,11 @@ const Navbar = () => {
     >
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-4">
-            <img src={logo} alt="Dr. Vaidya's ProPhysio - Advanced Physiotherapy Clinic & Paralysis Rehab Center" className="h-16 md:h-20 w-auto" />
-            <div className="hidden md:block">
-              <div className="bg-gradient-accent px-4 py-2 rounded-full">
-                <p className="text-sm font-bold text-secondary-foreground whitespace-nowrap">
+          <div className="flex items-center gap-2 md:gap-4">
+            <img src={logo} alt="Dr. Vaidya's ProPhysio - Advanced Physiotherapy Clinic & Paralysis Rehab Center" className="h-14 md:h-20 w-auto" />
+            <div className="block">
+              <div className="bg-gradient-accent px-2 py-1 md:px-4 md:py-2 rounded-full">
+                <p className="text-xs md:text-sm font-bold text-secondary-foreground whitespace-nowrap">
                   ✨ Without Medicine. Without Surgery ✨
                 </p>
               </div>

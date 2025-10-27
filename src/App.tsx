@@ -18,6 +18,7 @@ import FacialPalsy from "./pages/services/FacialPalsy";
 import LigamentTreatment from "./pages/services/LigamentTreatment";
 import CuppingTherapy from "./pages/services/CuppingTherapy";
 import DryNeedling from "./pages/services/DryNeedling";
+import Acupressure from "./pages/services/Acupressure";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/services/ligament-treatment" element={<LigamentTreatment />} />
           <Route path="/services/cupping-therapy" element={<CuppingTherapy />} />
           <Route path="/services/dry-needling" element={<DryNeedling />} />
+          <Route path="/services/acupressure" element={<Acupressure />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
