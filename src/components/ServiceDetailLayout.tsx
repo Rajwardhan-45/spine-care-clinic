@@ -88,7 +88,7 @@ const ServiceDetailLayout = ({
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Advanced Equipment & Therapies</CardTitle>
+                  <CardTitle className="text-2xl text-primary">Advanced Equipment & Therapies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -104,7 +104,7 @@ const ServiceDetailLayout = ({
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Therapeutic Exercises</CardTitle>
+                  <CardTitle className="text-2xl text-primary">Therapeutic Exercises</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -135,8 +135,7 @@ const ServiceDetailLayout = ({
                   </Button>
                   <Button 
                     size="lg" 
-                    variant="outline" 
-                    className="w-full border-white/30 text-white hover:bg-white/20"
+                    className="w-full bg-white text-primary hover:bg-white/90"
                     asChild
                   >
                     <a href="tel:09561260964">Call: 095612 60964</a>
