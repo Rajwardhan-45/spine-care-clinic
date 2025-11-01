@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Heart, Bone, Footprints, Smile, Zap, Shield, Target, User, Droplet, Gem, Sparkles, HandMetal } from "lucide-react";
+import { Activity, Heart, Bone, Footprints, Smile, Zap, Shield, Target, User, Droplet, Gem, Sparkles, HandMetal, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import kneePainBg from "@/assets/conditions/knee-pain.jpg";
 import spinePainBg from "@/assets/conditions/spine-pain.jpg";
@@ -174,6 +174,10 @@ const Services = () => {
                 </CardHeader>
                 <CardContent className="relative z-10">
                   <p className="text-muted-foreground">{service.description}</p>
+                  <div className="flex items-center gap-2 mt-4 text-accent font-medium group-hover:gap-3 transition-all">
+                    <span className="text-sm">Read More</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
                 </CardContent>
               </Card>
             );

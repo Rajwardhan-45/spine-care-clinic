@@ -35,7 +35,7 @@ const Navbar = () => {
             <img src={logo} alt="Dr. Vaidya's ProPhysio - Advanced Physiotherapy Clinic & Paralysis Rehab Center" className="h-14 md:h-20 w-auto" />
             <div className="block">
               <div className="bg-gradient-accent px-2 py-1 md:px-4 md:py-2 rounded-full">
-                <p className="text-xs md:text-sm font-bold whitespace-nowrap" style={{ color: '#00FF00' }}>
+                <p className="text-xs md:text-sm font-bold whitespace-nowrap text-white">
                   ✨ Without Medicine. Without Surgery ✨
                 </p>
               </div>

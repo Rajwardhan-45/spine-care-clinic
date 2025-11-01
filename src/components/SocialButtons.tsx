@@ -15,7 +15,6 @@ const SocialButtons = () => {
         aria-label="Follow on Instagram"
       >
         <Instagram className="w-5 h-5 md:w-6 md:h-6 text-white" />
-        <span className="text-[7px] md:text-[9px] font-semibold text-white leading-tight mt-0.5 hidden md:block">Follow<br/>Instagram</span>
       </a>
       
       <a
@@ -30,7 +29,6 @@ const SocialButtons = () => {
         aria-label="Visit our Facebook Page"
       >
         <Facebook className="w-5 h-5 md:w-6 md:h-6 text-white" />
-        <span className="text-[7px] md:text-[9px] font-semibold text-white leading-tight mt-0.5 hidden md:block">Visit<br/>Facebook</span>
       </a>
     </div>
   );

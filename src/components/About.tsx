@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, BookOpen, Users, TrendingUp } from "lucide-react";
 import doctorProfile from "@/assets/doctor-profile.jpg";
+import bodyPartsBg from "@/assets/body-parts-background.jpg";
 
 const About = () => {
   const highlights = [
@@ -27,8 +28,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-card">
-      <div className="container px-4 mx-auto">
+    <section id="about" className="py-20 bg-card relative overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-5"
+        style={{ backgroundImage: `url(${bodyPartsBg})` }}
+      />
+      <div className="container px-4 mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in space-y-6">
             <div className="flex items-center gap-6 mb-6">
