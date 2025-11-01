@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Bone } from "lucide-react";
+import { Bone, Zap, Radio, TrendingDown, Lock, Clock, Dumbbell, Briefcase, Users } from "lucide-react";
 
 const SlipDisc = () => {
   return (
@@ -16,6 +16,50 @@ const SlipDisc = () => {
         "Sciatica pain management",
         "Posture correction and spinal alignment",
         "Prevention of disc degeneration"
+      ]}
+      symptoms={[
+        {
+          name: "Severe Back Pain",
+          description: "Intense pain in lower back that may worsen with movement",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Leg Pain (Sciatica)",
+          description: "Sharp, shooting pain down one or both legs",
+          icon: <Radio className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Numbness",
+          description: "Loss of sensation in legs, feet, or toes",
+          icon: <TrendingDown className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Muscle Weakness",
+          description: "Difficulty walking or standing for long periods",
+          icon: <Lock className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Aging & Degeneration",
+          description: "Natural disc wear and tear over time",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Heavy Lifting",
+          description: "Improper lifting technique causing disc herniation",
+          icon: <Dumbbell className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Prolonged Sitting",
+          description: "Extended periods of sitting putting pressure on discs",
+          icon: <Briefcase className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Sudden Injury",
+          description: "Trauma or sudden twisting movements",
+          icon: <Users className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

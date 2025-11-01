@@ -30,9 +30,10 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-card relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-5"
+        className="absolute inset-0 bg-cover bg-center opacity-20 md:opacity-15"
         style={{ backgroundImage: `url(${bodyPartsBg})` }}
       />
+      <div className="absolute inset-0 bg-gradient-to-b from-card/95 via-card/90 to-card/95" />
       <div className="container px-4 mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in space-y-6">

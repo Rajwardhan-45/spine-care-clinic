@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Shield } from "lucide-react";
+import { Shield, Zap, AlertCircle, Radio, Smartphone, Users, Clock, Briefcase } from "lucide-react";
 
 const CervicalSpondylosis = () => {
   return (
@@ -16,6 +16,50 @@ const CervicalSpondylosis = () => {
         "Postural neck pain correction",
         "Prevention of progression",
         "Improvement in neck mobility"
+      ]}
+      symptoms={[
+        {
+          name: "Neck Stiffness",
+          description: "Reduced range of motion and muscle tightness",
+          icon: <AlertCircle className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Radiating Pain",
+          description: "Pain spreading to shoulders, arms, or hands",
+          icon: <Radio className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Numbness & Tingling",
+          description: "Pins and needles sensation in arms or fingers",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Headaches",
+          description: "Tension headaches originating from neck",
+          icon: <AlertCircle className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Age & Degeneration",
+          description: "Natural wear and tear of cervical discs and joints",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Poor Posture",
+          description: "Extended periods of screen time and desk work",
+          icon: <Smartphone className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Occupational Stress",
+          description: "Jobs requiring repetitive neck movements",
+          icon: <Briefcase className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Previous Injury",
+          description: "Whiplash or neck trauma history",
+          icon: <Users className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

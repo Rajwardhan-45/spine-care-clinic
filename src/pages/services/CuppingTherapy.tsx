@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Gem } from "lucide-react";
+import { Gem, Zap, Activity, CircleDot, TrendingUp, Dumbbell, Briefcase, Users, Clock } from "lucide-react";
 
 const CuppingTherapy = () => {
   return (
@@ -16,6 +16,50 @@ const CuppingTherapy = () => {
         "Stress and anxiety relief",
         "Enhanced athletic recovery",
         "Traditional healing approach"
+      ]}
+      symptoms={[
+        {
+          name: "Muscle Stiffness",
+          description: "Tight, tense muscles causing restricted movement",
+          icon: <CircleDot className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Chronic Pain",
+          description: "Persistent pain in back, neck, or shoulders",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Poor Circulation",
+          description: "Cold extremities and sluggish blood flow",
+          icon: <Activity className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Fatigue",
+          description: "Low energy and general body weakness",
+          icon: <TrendingUp className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Muscle Overuse",
+          description: "Strenuous activities causing muscle strain",
+          icon: <Dumbbell className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Sedentary Lifestyle",
+          description: "Prolonged sitting leading to tension and stiffness",
+          icon: <Briefcase className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Stress",
+          description: "Mental stress manifesting as physical tension",
+          icon: <Users className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Poor Posture",
+          description: "Incorrect body alignment causing muscle imbalances",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

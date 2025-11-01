@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Zap, Lock, AlertCircle, Activity, Dumbbell, Briefcase, Users, Clock } from "lucide-react";
 
 const DryNeedling = () => {
   return (
@@ -16,6 +16,50 @@ const DryNeedling = () => {
         "Sports injury recovery",
         "Headache and migraine relief",
         "Rapid pain reduction"
+      ]}
+      symptoms={[
+        {
+          name: "Trigger Points",
+          description: "Painful knots or tight bands in muscles",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Restricted Movement",
+          description: "Limited range of motion in affected areas",
+          icon: <Lock className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Referred Pain",
+          description: "Pain spreading from trigger points to other areas",
+          icon: <AlertCircle className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Muscle Weakness",
+          description: "Reduced strength in affected muscle groups",
+          icon: <Activity className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Overuse Injuries",
+          description: "Repetitive movements causing muscle strain",
+          icon: <Dumbbell className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Poor Posture",
+          description: "Sustained awkward positions creating tension",
+          icon: <Briefcase className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Stress & Tension",
+          description: "Chronic stress leading to muscle tightness",
+          icon: <Users className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Previous Injuries",
+          description: "Past trauma causing persistent trigger points",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

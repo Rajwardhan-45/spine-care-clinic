@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Bone } from "lucide-react";
+import { Bone, Zap, Radio, TrendingDown, AlertCircle, Users, Clock, Dumbbell, Briefcase } from "lucide-react";
 
 const BackPain = () => {
   return (
@@ -16,6 +16,50 @@ const BackPain = () => {
         "Postural correction",
         "Long-term pain prevention",
         "Return to daily activities"
+      ]}
+      symptoms={[
+        {
+          name: "Sharp Back Pain",
+          description: "Sudden, intense pain in lower or upper back",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Radiating Pain",
+          description: "Pain shooting down legs (sciatica)",
+          icon: <Radio className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Stiffness",
+          description: "Difficulty bending or straightening back",
+          icon: <TrendingDown className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Numbness",
+          description: "Tingling or numbness in legs or feet",
+          icon: <AlertCircle className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Poor Posture",
+          description: "Prolonged sitting or incorrect standing alignment",
+          icon: <Users className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Age-Related Wear",
+          description: "Degenerative disc disease and arthritis",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Muscle Strain",
+          description: "Heavy lifting or sudden awkward movements",
+          icon: <Dumbbell className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Sedentary Work",
+          description: "Desk jobs causing weak core muscles",
+          icon: <Briefcase className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

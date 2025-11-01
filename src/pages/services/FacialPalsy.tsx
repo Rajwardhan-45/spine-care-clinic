@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { User } from "lucide-react";
+import { User, Zap, Frown, Eye, Wind, Activity, Brain, Shield, Snowflake } from "lucide-react";
 
 const FacialPalsy = () => {
   return (
@@ -16,6 +16,50 @@ const FacialPalsy = () => {
         "Eye protection and care",
         "Speech and eating function improvement",
         "Psychological support during recovery"
+      ]}
+      symptoms={[
+        {
+          name: "Facial Drooping",
+          description: "One side of face droops or becomes weak suddenly",
+          icon: <Frown className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Inability to Close Eye",
+          description: "Difficulty closing eye on affected side completely",
+          icon: <Eye className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Loss of Taste",
+          description: "Reduced taste sensation on front of tongue",
+          icon: <Wind className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Pain Around Jaw",
+          description: "Pain or discomfort around jaw or behind ear",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Viral Infection",
+          description: "Herpes simplex virus is most common cause",
+          icon: <Activity className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Nerve Inflammation",
+          description: "Swelling and inflammation of facial nerve",
+          icon: <Brain className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Weakened Immunity",
+          description: "Diabetes, pregnancy, or respiratory illness",
+          icon: <Shield className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Cold Exposure",
+          description: "Extreme cold can trigger nerve dysfunction",
+          icon: <Snowflake className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

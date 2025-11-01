@@ -10,6 +10,16 @@ interface ServiceDetailLayoutProps {
   title: string;
   description: string;
   keyPoints: string[];
+  symptoms?: Array<{
+    name: string;
+    description: string;
+    icon: ReactNode;
+  }>;
+  causes?: Array<{
+    name: string;
+    description: string;
+    icon: ReactNode;
+  }>;
   equipment: Array<{
     name: string;
     description: string;
@@ -25,6 +35,8 @@ const ServiceDetailLayout = ({
   title,
   description,
   keyPoints,
+  symptoms,
+  causes,
   equipment,
   exercises,
   icon
@@ -85,6 +97,52 @@ const ServiceDetailLayout = ({
                   </ul>
                 </CardContent>
               </Card>
+
+              {symptoms && symptoms.length > 0 && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-primary">Common Symptoms</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {symptoms.map((symptom, index) => (
+                        <div key={index} className="p-4 border border-border rounded-lg bg-background flex items-start gap-3">
+                          <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center flex-shrink-0">
+                            {symptom.icon}
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-foreground mb-1">{symptom.name}</h3>
+                            <p className="text-sm text-muted-foreground">{symptom.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              {causes && causes.length > 0 && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-primary">Common Causes</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {causes.map((cause, index) => (
+                        <div key={index} className="p-4 border border-border rounded-lg bg-background flex items-start gap-3">
+                          <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center flex-shrink-0">
+                            {cause.icon}
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-foreground mb-1">{cause.name}</h3>
+                            <p className="text-sm text-muted-foreground">{cause.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
 
               <Card>
                 <CardHeader>

@@ -1,5 +1,5 @@
 import ServiceDetailLayout from "@/components/ServiceDetailLayout";
-import { Zap } from "lucide-react";
+import { Zap, AlertTriangle, Repeat, MousePointer, Dumbbell, Laptop, Clock, Activity } from "lucide-react";
 
 const TennisElbow = () => {
   return (
@@ -16,6 +16,50 @@ const TennisElbow = () => {
         "Prevention of chronic elbow pain",
         "Return to work and sport",
         "Ergonomic modifications"
+      ]}
+      symptoms={[
+        {
+          name: "Elbow Pain",
+          description: "Pain on outer elbow that worsens with gripping",
+          icon: <Zap className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Weak Grip",
+          description: "Difficulty holding objects or shaking hands",
+          icon: <AlertTriangle className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Stiffness",
+          description: "Reduced elbow and wrist flexibility",
+          icon: <Activity className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Forearm Discomfort",
+          description: "Pain radiating down the forearm",
+          icon: <MousePointer className="h-5 w-5 text-secondary-foreground" />
+        }
+      ]}
+      causes={[
+        {
+          name: "Repetitive Movements",
+          description: "Frequent gripping, twisting, or lifting motions",
+          icon: <Repeat className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Sports Activities",
+          description: "Tennis, badminton, and racquet sports overuse",
+          icon: <Dumbbell className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Manual Labor",
+          description: "Carpentry, plumbing, painting, and typing",
+          icon: <Laptop className="h-5 w-5 text-secondary-foreground" />
+        },
+        {
+          name: "Age Factor",
+          description: "Most common between ages 30-50 years",
+          icon: <Clock className="h-5 w-5 text-secondary-foreground" />
+        }
       ]}
       equipment={[
         {

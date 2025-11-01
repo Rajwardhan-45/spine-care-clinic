@@ -49,7 +49,7 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
             <div className="text-4xl font-bold text-white mb-2">15+</div>
             <div className="text-white/80">Years Experience</div>
@@ -57,6 +57,10 @@ const Hero = () => {
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
             <div className="text-4xl font-bold text-white mb-2">20000+</div>
             <div className="text-white/80">Patients Treated</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
+            <div className="text-4xl font-bold text-white mb-2">15000+</div>
+            <div className="text-white/80">Surgeries Avoided</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
             <div className="text-4xl font-bold text-white mb-2">95%</div>
