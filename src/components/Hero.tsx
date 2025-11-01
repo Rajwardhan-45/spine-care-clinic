@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-clinic.jpg";
+import spineBg from "@/assets/spine-glow-bg.jpg";
 
 const Hero = () => {
   const scrollToAppointment = () => {
@@ -12,8 +13,8 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80" />
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
+        style={{ backgroundImage: `url(${spineBg})` }}
       />
       
       <div className="container relative z-10 px-4 py-20 mx-auto text-center animate-fade-in">

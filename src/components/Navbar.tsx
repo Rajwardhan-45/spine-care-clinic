@@ -46,33 +46,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("services")}
-              className={`transition-colors hover:text-primary ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="text-white transition-colors hover:text-accent"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className={`transition-colors hover:text-primary ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="text-white transition-colors hover:text-accent"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("appointment")}
-              className={`transition-colors hover:text-primary ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="text-white transition-colors hover:text-accent"
             >
               Appointment
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className={`transition-colors hover:text-primary ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className="text-white transition-colors hover:text-accent"
             >
               Contact
             </button>
@@ -90,7 +82,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

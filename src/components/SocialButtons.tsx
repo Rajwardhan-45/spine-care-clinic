@@ -2,20 +2,20 @@ import { Instagram, Facebook } from "lucide-react";
 
 const SocialButtons = () => {
   return (
-    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4">
+    <div className="fixed left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2 md:gap-4">
       <a
         href="https://www.instagram.com/dranirudhaprophysio/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#dc2743] hover:from-[#e6683c] hover:via-[#dc2743] hover:to-[#bc1888] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex flex-col items-center justify-center"
         style={{ 
-          width: '75px', 
-          height: '75px'
+          width: '50px', 
+          height: '50px'
         }}
         aria-label="Follow on Instagram"
       >
-        <Instagram className="w-7 h-7 text-white" />
-        <span className="text-[9px] font-semibold text-white leading-tight mt-1">Follow on<br/>Instagram</span>
+        <Instagram className="w-5 h-5 md:w-6 md:h-6 text-white" />
+        <span className="text-[7px] md:text-[9px] font-semibold text-white leading-tight mt-0.5 hidden md:block">Follow<br/>Instagram</span>
       </a>
       
       <a
@@ -24,13 +24,13 @@ const SocialButtons = () => {
         rel="noopener noreferrer"
         className="bg-[#1877F2] hover:bg-[#0C63D4] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex flex-col items-center justify-center"
         style={{ 
-          width: '75px', 
-          height: '75px'
+          width: '50px', 
+          height: '50px'
         }}
         aria-label="Visit our Facebook Page"
       >
-        <Facebook className="w-7 h-7 text-white" />
-        <span className="text-[9px] font-semibold text-white leading-tight mt-1">Visit our<br/>Facebook</span>
+        <Facebook className="w-5 h-5 md:w-6 md:h-6 text-white" />
+        <span className="text-[7px] md:text-[9px] font-semibold text-white leading-tight mt-0.5 hidden md:block">Visit<br/>Facebook</span>
       </a>
     </div>
   );
