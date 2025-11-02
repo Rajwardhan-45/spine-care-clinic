@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://dranirudhavaidya.com/</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://dranirudhavaidya.com/about</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Services Main Page -->
+  <url>
+    <loc>https://dranirudhavaidya.com/services</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://dranirudhavaidya.com/contact</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Individual Service Pages (if they exist) -->
+  <url>
+    <loc>https://dranirudhavaidya.com/services/paralysis-rehab</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/sports-injury</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/chiropractic-therapy</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/dry-needling</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
