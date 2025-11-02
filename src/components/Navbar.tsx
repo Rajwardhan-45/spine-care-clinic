@@ -46,25 +46,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("services")}
-              className="text-white transition-colors hover:text-accent"
+              className="text-green-400 transition-colors hover:text-green-300 font-medium"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-white transition-colors hover:text-accent"
+              className="text-green-400 transition-colors hover:text-green-300 font-medium"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("appointment")}
-              className="text-white transition-colors hover:text-accent"
+              className="text-green-400 transition-colors hover:text-green-300 font-medium"
             >
               Appointment
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-white transition-colors hover:text-accent"
+              className="text-green-400 transition-colors hover:text-green-300 font-medium"
             >
               Contact
             </button>
