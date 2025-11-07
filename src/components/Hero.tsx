@@ -19,7 +19,10 @@ const Hero = () => {
       
       <div className="container relative z-10 px-4 py-20 mx-auto text-center animate-fade-in">
         <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
-          Dr. Anirudha Vaidya (PT)<br />Expert Physiotherapy & Chiropractic Care
+          Dr. Anirudha Vaidya (PT)<br />
+          <span className="block mt-2">Physiotherapy</span>
+          <span className="block">Chiropractic</span>
+          <span className="block">Rehab</span>
         </h1>
         <p className="mb-8 text-xl text-white/90 max-w-2xl mx-auto md:text-2xl">
           Advanced treatment for back pain, sports injuries, and rehabilitation.<br />
@@ -59,7 +62,7 @@ const Hero = () => {
             <div className="text-white/80">Patients Treated</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-            <div className="text-4xl font-bold text-white mb-2">15000+</div>
+            <div className="text-4xl font-bold text-white mb-2">10000+</div>
             <div className="text-white/80">Surgeries Avoided</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
