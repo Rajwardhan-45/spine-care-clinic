@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80" />
+      <div className="absolute inset-0 bg-gradient-hero" />
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay"
         style={{ backgroundImage: `url(${spineBg})` }}
