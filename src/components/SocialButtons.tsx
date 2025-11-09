@@ -18,7 +18,7 @@ const SocialButtons = () => {
       </a>
       
       <a
-        href="https://www.facebook.com/people/Dr-Anirudha-Vaidya-ProPhysio-Advance-Physiotherapy-Clinic/100092989384116/"
+        href="https://www.facebook.com/share/19as8GU3Pa/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#1877F2] hover:bg-[#0C63D4] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex flex-col items-center justify-center"

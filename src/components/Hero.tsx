@@ -23,6 +23,7 @@ const Hero = () => {
           <span className="block mt-2">Physiotherapy</span>
           <span className="block">Chiropractic</span>
           <span className="block">Rehab</span>
+          <span className="block mt-2 text-3xl md:text-4xl text-accent">Result Oriented Treatment</span>
         </h1>
         <p className="mb-8 text-xl text-white/90 max-w-2xl mx-auto md:text-2xl">
           Advanced treatment for back pain, sports injuries, and rehabilitation.<br />
