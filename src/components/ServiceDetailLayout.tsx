@@ -2,10 +2,26 @@ import { ReactNode } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CheckCircle, Clock, HelpCircle, Award, Calendar, Activity, Heart, Shield, Star } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface TreatmentTimelineStep {
+  title: string;
+  description: string;
+}
 
 interface ServiceDetailLayoutProps {
   title: string;
@@ -30,6 +46,14 @@ interface ServiceDetailLayoutProps {
     description: string;
   }>;
   icon: ReactNode;
+  // New expanded content props
+  introduction?: string;
+  understandingCondition?: string;
+  treatmentApproach?: string;
+  treatmentTimeline?: TreatmentTimelineStep[];
+  recoveryPrevention?: string;
+  faqs?: FAQ[];
+  whyChooseUs?: string[];
 }
 
 const ServiceDetailLayout = ({
@@ -40,7 +64,14 @@ const ServiceDetailLayout = ({
   causes,
   equipment,
   exercises,
-  icon
+  icon,
+  introduction,
+  understandingCondition,
+  treatmentApproach,
+  treatmentTimeline,
+  recoveryPrevention,
+  faqs,
+  whyChooseUs
 }: ServiceDetailLayoutProps) => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
@@ -48,7 +79,7 @@ const ServiceDetailLayout = ({
   const baseUrl = "https://dranirudhavaidya.com";
   const canonicalUrl = `${baseUrl}${pathname}`;
   const pageTitle = `${title} Treatment in Pimpri-Chinchwad | Dr. Anirudha Vaidya`;
-  const metaDescription = `Expert ${title.toLowerCase()} treatment at Dr. Anirudha Vaidya's clinic in Pimpri-Chinchwad, Pune. ${description} Advanced physiotherapy equipment, personalized care. Book appointment: 095612 60964`;
+  const metaDescription = `Expert ${title.toLowerCase()} treatment at Dr. Anirudha Vaidya's clinic in Pimpri-Chinchwad, Pune. ${description} Advanced physiotherapy equipment, personalized care. Book appointment: 075172 37255`;
   const ogImage = `${baseUrl}/favicon.png`;
 
   // JSON-LD Structured Data
@@ -70,7 +101,7 @@ const ServiceDetailLayout = ({
     "provider": {
       "@type": "Physician",
       "name": "Dr. Anirudha Vaidya",
-      "telephone": "+91-9561260964",
+      "telephone": "+91-7517237255",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Amrute Hospital Building Premises, behind Bird Valley Garden, near Siddhivinayak Ganpati Mandir, Sambhajinagar",
@@ -112,7 +143,7 @@ const ServiceDetailLayout = ({
     "@type": "Physiotherapy",
     "name": "Dr. Anirudha Vaidya - Physiotherapy Clinic",
     "image": ogImage,
-    "telephone": "+91-9561260964",
+    "telephone": "+91-7517237255",
     "url": baseUrl,
     "address": {
       "@type": "PostalAddress",
@@ -130,6 +161,20 @@ const ServiceDetailLayout = ({
     "priceRange": "$$"
   };
 
+  // FAQ Schema for SEO
+  const faqSchema = faqs && faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   const scrollToAppointment = () => {
     navigate('/');
     setTimeout(() => {
@@ -137,6 +182,8 @@ const ServiceDetailLayout = ({
       appointmentSection?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
+
+  const timelineIcons = [Calendar, Activity, Heart, Clock, CheckCircle, Shield];
 
   return (
     <HelmetProvider>
@@ -192,10 +239,16 @@ const ServiceDetailLayout = ({
           <script type="application/ld+json">
             {JSON.stringify(localBusinessSchema)}
           </script>
+          {faqSchema && (
+            <script type="application/ld+json">
+              {JSON.stringify(faqSchema)}
+            </script>
+          )}
         </Helmet>
 
         <Navbar />
         
+        {/* Hero Section */}
         <section className="py-20 bg-gradient-hero text-white">
           <div className="container px-4 mx-auto">
             <Button
@@ -223,15 +276,45 @@ const ServiceDetailLayout = ({
           <div className="container px-4 mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2 space-y-8">
+                
+                {/* Introduction Section */}
+                {introduction && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">About {title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {introduction}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Understanding the Condition */}
+                {understandingCondition && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Understanding the Condition</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {understandingCondition}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Key Points */}
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-2xl">Key Points</CardTitle>
+                    <CardTitle className="text-2xl">Key Benefits of Treatment</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
                       {keyPoints.map((point, index) => (
                         <li key={index} className="flex items-start">
-                          <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0"></span>
+                          <CheckCircle className="w-5 h-5 text-accent mt-0.5 mr-3 flex-shrink-0" />
                           <span className="text-muted-foreground">{point}</span>
                         </li>
                       ))}
@@ -239,6 +322,7 @@ const ServiceDetailLayout = ({
                   </CardContent>
                 </Card>
 
+                {/* Symptoms */}
                 {symptoms && symptoms.length > 0 && (
                   <Card>
                     <CardHeader>
@@ -262,6 +346,7 @@ const ServiceDetailLayout = ({
                   </Card>
                 )}
 
+                {/* Causes */}
                 {causes && causes.length > 0 && (
                   <Card>
                     <CardHeader>
@@ -285,6 +370,53 @@ const ServiceDetailLayout = ({
                   </Card>
                 )}
 
+                {/* Treatment Approach */}
+                {treatmentApproach && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Our Treatment Approach</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {treatmentApproach}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Treatment Timeline */}
+                {treatmentTimeline && treatmentTimeline.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Treatment Process Timeline</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-6">
+                        {treatmentTimeline.map((step, index) => {
+                          const IconComponent = timelineIcons[index % timelineIcons.length];
+                          return (
+                            <div key={index} className="flex gap-4">
+                              <div className="flex flex-col items-center">
+                                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                                  <IconComponent className="w-5 h-5 text-primary-foreground" />
+                                </div>
+                                {index < treatmentTimeline.length - 1 && (
+                                  <div className="w-0.5 h-full bg-border mt-2 min-h-[40px]" />
+                                )}
+                              </div>
+                              <div className="pb-6">
+                                <h3 className="font-semibold text-foreground text-lg mb-2">{step.title}</h3>
+                                <p className="text-muted-foreground">{step.description}</p>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Equipment & Therapies */}
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-2xl text-primary">Advanced Equipment & Therapies</CardTitle>
@@ -301,6 +433,7 @@ const ServiceDetailLayout = ({
                   </CardContent>
                 </Card>
 
+                {/* Therapeutic Exercises */}
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-2xl text-primary">Therapeutic Exercises</CardTitle>
@@ -316,8 +449,71 @@ const ServiceDetailLayout = ({
                     </div>
                   </CardContent>
                 </Card>
+
+                {/* Recovery & Prevention */}
+                {recoveryPrevention && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary">Recovery & Prevention</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {recoveryPrevention}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* FAQs */}
+                {faqs && faqs.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary flex items-center gap-2">
+                        <HelpCircle className="w-6 h-6" />
+                        Frequently Asked Questions
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <Accordion type="single" collapsible className="w-full">
+                        {faqs.map((faq, index) => (
+                          <AccordionItem key={index} value={`faq-${index}`}>
+                            <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+                              {faq.question}
+                            </AccordionTrigger>
+                            <AccordionContent className="text-muted-foreground leading-relaxed">
+                              {faq.answer}
+                            </AccordionContent>
+                          </AccordionItem>
+                        ))}
+                      </Accordion>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Why Choose Us */}
+                {whyChooseUs && whyChooseUs.length > 0 && (
+                  <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-primary flex items-center gap-2">
+                        <Award className="w-6 h-6" />
+                        Why Choose Dr. Anirudha Vaidya's Clinic
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {whyChooseUs.map((reason, index) => (
+                          <div key={index} className="flex items-start gap-2">
+                            <Star className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                            <span className="text-muted-foreground">{reason}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
               </div>
 
+              {/* Sidebar */}
               <div className="lg:col-span-1">
                 <Card className="sticky top-24 bg-gradient-hero text-primary-foreground">
                   <CardHeader>
@@ -337,7 +533,7 @@ const ServiceDetailLayout = ({
                       className="w-full bg-white text-primary hover:bg-white/90"
                       asChild
                     >
-                      <a href="tel:09561260964">Call: 095612 60964</a>
+                      <a href="tel:07517237255">Call: 075172 37255</a>
                     </Button>
                   </CardContent>
                 </Card>
