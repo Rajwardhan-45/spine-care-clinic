@@ -19,6 +19,12 @@ import LigamentTreatment from "./pages/services/LigamentTreatment";
 import CuppingTherapy from "./pages/services/CuppingTherapy";
 import DryNeedling from "./pages/services/DryNeedling";
 import Acupressure from "./pages/services/Acupressure";
+import PostSurgeryRehab from "./pages/services/PostSurgeryRehab";
+import Arthritis from "./pages/services/Arthritis";
+import Sciatica from "./pages/services/Sciatica";
+import PlantarFasciitis from "./pages/services/PlantarFasciitis";
+import CarpalTunnel from "./pages/services/CarpalTunnel";
+import PosturalCorrection from "./pages/services/PosturalCorrection";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +50,12 @@ const App = () => (
           <Route path="/services/cupping-therapy" element={<CuppingTherapy />} />
           <Route path="/services/dry-needling" element={<DryNeedling />} />
           <Route path="/services/acupressure" element={<Acupressure />} />
+          <Route path="/services/post-surgery-rehab" element={<PostSurgeryRehab />} />
+          <Route path="/services/arthritis" element={<Arthritis />} />
+          <Route path="/services/sciatica" element={<Sciatica />} />
+          <Route path="/services/plantar-fasciitis" element={<PlantarFasciitis />} />
+          <Route path="/services/carpal-tunnel" element={<CarpalTunnel />} />
+          <Route path="/services/postural-correction" element={<PosturalCorrection />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
