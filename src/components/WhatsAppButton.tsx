@@ -12,7 +12,7 @@ const WhatsAppButton = () => {
         height: '60px',
         animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
       }}
-      aria-label="Book on WhatsApp"
+      aria-label="Book WhatsApp"
     >
       <div className="flex flex-col items-center justify-center gap-0.5">
         <svg
