@@ -1,3 +1,4 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -12,20 +13,26 @@ import SocialButtons from "@/components/SocialButtons";
 
 
 const Index = () => {
+  const canonicalUrl = "https://dranirudhavaidya.com/";
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Services />
-      <BodyPartsSection />
-      <About />
-      <Testimonials />
-      <AppointmentForm />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
-      <SocialButtons />
-    </div>
+    <HelmetProvider>
+      <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
+      <div className="min-h-screen">
+        <Navbar />
+        <Hero />
+        <Services />
+        <BodyPartsSection />
+        <About />
+        <Testimonials />
+        <AppointmentForm />
+        <Contact />
+        <Footer />
+        <WhatsAppButton />
+        <SocialButtons />
+      </div>
+    </HelmetProvider>
   );
 };
 
