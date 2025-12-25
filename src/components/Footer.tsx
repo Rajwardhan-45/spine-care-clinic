@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-            Dr. Anirudha Vaidya (PT) Physiotherapy & Chiropractic Clinic
+            Dr. Anirudha Vaidya Physiotherapy & Chiropractic Clinic
           </h3>
           <p className="text-lg md:text-xl text-muted-foreground mb-6">
             Best Physiotherapist in Pune and Pimpri Chinchwad | Expert Chiropractic Care
@@ -38,7 +38,7 @@ const Footer = () => {
             Made with <Heart className="h-4 w-4 text-accent fill-accent" /> for better health
           </p>
           <p className="text-xs text-muted-foreground mt-2">
-            © {new Date().getFullYear()} Dr. Anirudha Vaidya (PT) Clinic. All rights reserved.
+            © {new Date().getFullYear()} Dr. Anirudha Vaidya Clinic. All rights reserved.
           </p>
         </div>
       </div>

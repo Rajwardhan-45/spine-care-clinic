@@ -520,7 +520,7 @@ const ServiceDetailLayout = ({
                     <CardTitle className="text-2xl">Book Your Appointment</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p>Get expert treatment from Dr. Anirudha Vaidya (PT)</p>
+                    <p>Get expert treatment from Dr. Anirudha Vaidya</p>
                     <Button 
                       size="lg" 
                       className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"

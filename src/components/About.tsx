@@ -40,12 +40,12 @@ const About = () => {
             <div className="flex items-center gap-6 mb-6">
               <img 
                 src={doctorProfile} 
-                alt="Dr. Anirudha Vaidya (PT) - Consultant Physiotherapist" 
+                alt="Dr. Anirudha Vaidya - Consultant Physiotherapist" 
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-elegant border-4 border-accent"
               />
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Dr. Anirudha Vaidya (PT)
+                  Dr. Anirudha Vaidya
                 </h2>
                 <p className="text-lg text-muted-foreground mt-2">
                   <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
@@ -57,13 +57,13 @@ const About = () => {
             </div>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Dr. Anirudha Vaidya (PT) is a highly skilled physiotherapist and chiropractor with extensive 
+                Dr. Anirudha Vaidya is a highly skilled physiotherapist and chiropractor with extensive 
                 experience in treating complex musculoskeletal conditions. His clinic in Pune and Pimpri Chinchwad 
                 is recognized as one of the best physiotherapy centers in the area.
               </p>
               <p>
                 With a philosophy of <span className="font-bold text-xl text-accent">✨ Without Medicine. Without Surgery. ✨</span>, 
-                Dr. Anirudha Vaidya (PT) has successfully treated thousands of patients 
+                Dr. Anirudha Vaidya has successfully treated thousands of patients 
                 suffering from chronic pain, sports injuries, and neurological conditions.
               </p>
               <p>
