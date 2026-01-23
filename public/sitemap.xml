@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://dranirudhavaidya.com/</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,98 +12,140 @@
   <!-- Service Pages -->
   <url>
     <loc>https://dranirudhavaidya.com/services/sports-injury</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/slip-disc</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/back-pain</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/chiropractic</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/cervical-spondylosis</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/knee-pain</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/frozen-shoulder</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/paralysis</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/tennis-elbow</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/facial-palsy</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/ligament-treatment</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/cupping-therapy</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/dry-needling</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dranirudhavaidya.com/services/acupressure</loc>
-    <lastmod>2025-11-07</lastmod>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/post-surgery-rehab</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/arthritis</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/sciatica</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/plantar-fasciitis</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/carpal-tunnel</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dranirudhavaidya.com/services/postural-correction</loc>
+    <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
