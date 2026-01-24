@@ -19,7 +19,7 @@ const Hero = () => {
       
       <div className="container relative z-10 px-4 py-20 mx-auto text-center animate-fade-in">
         <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
-          Dr. Anirudha Vaidya (PT)<br />
+          Dr. Anirudha Vaidya<br />
           <span className="block mt-2">Physiotherapy</span>
           <span className="block">Chiropractic</span>
           <span className="block">Rehab</span>

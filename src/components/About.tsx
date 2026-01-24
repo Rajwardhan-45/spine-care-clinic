@@ -45,7 +45,7 @@ const About = () => {
               />
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Dr. Anirudha Vaidya
+                  Dr. Anirudha Vaidya (PT)
                 </h2>
                 <p className="text-lg text-muted-foreground mt-2">
                   <span className="font-semibold text-foreground">B.P.Th, MPT (Ortho-Hand)</span>
